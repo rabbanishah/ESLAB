@@ -1,0 +1,21 @@
+*** Creating Trace Output File 'sub64.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_nuc1xx.o"'
+### List of Objects: adding '"core_cm0.o"'
+### List of Objects: adding '"system_nuc1xx.o"'
+### List of Objects: adding '"sub64.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 "startup_nuc1xx.o" "core_cm0.o" "system_nuc1xx.o" "sub64.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\sub64.map" -o "sub64.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'sub64.axf'
+### ADS-LD Command File: 'sub64.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'sub64.lnp', Handle=0x00000658
+### Writing '.lnp' file
+### ADS-LD Command file 'sub64.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

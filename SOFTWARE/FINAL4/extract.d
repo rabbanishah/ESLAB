@@ -1,0 +1,1 @@
+extract.o: extract.asm

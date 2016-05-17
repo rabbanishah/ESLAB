@@ -1,0 +1,51 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 PRESERVE8
+    2 00000000                 THUMB
+    3 00000000                 AREA             |.text|, CODE , READONLY
+    4 00000000                 EXPORT           __main
+    5 00000000         __main
+    6 00000000 4803            LDR              R0,=0XF0000001
+    7 00000002 4904            LDR              R1,=0X00000001
+    8 00000004 4A04            LDR              R2,=0X10000000
+    9 00000006 4B05            LDR              R3,=0X00000000
+   10 00000008 1880            ADDS             R0,R0,R2
+   11 0000000A 4159            ADCS             R1,R1,R3
+   12 0000000C         
+   13 0000000C BF00            NOP
+   14 0000000E                 END
+              00 00 F0000001 
+              00000001 
+              10000000 
+              00000000 
+Command Line: --debug --xref --cpu=Cortex-M0 --apcs=interwork --depend=add64.d 
+-oadd64.o -IC:\Keil\ARM\RV31\Inc -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\
+Nuvoton\NUC1xx --predefine="__EVAL SETA 1" --list=add64.lst add64.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 3 in file add64.asm
+   Uses
+      None
+Comment: .text unused
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 5 in file add64.asm
+   Uses
+      At line 4 in file add64.asm
+Comment: __main used once
+2 symbols
+335 symbols in table

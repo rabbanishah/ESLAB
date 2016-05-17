@@ -1,0 +1,22 @@
+	PRESERVE8
+	THUMB
+	AREA |.TEXT|,CODE,READONLY
+	EXPORT __main
+__main
+	LDR R0,=0x20000000
+	LDR R1,=0x20000100
+	MOVS R2,#10
+
+loop
+	LDRB r5,[R0]
+	push{r5}
+	ADDS R0,R0,#1
+	pop{R6}
+	STRB R6,[R1]
+	ADDS R1,R1,#1
+	SUBS R2,R2,#1
+	BNE loop
+	NOP
+	END
+
+	
