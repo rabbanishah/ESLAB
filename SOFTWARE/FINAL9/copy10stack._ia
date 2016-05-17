@@ -1,1 +1,0 @@
---cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Nuvoton\NUC1xx --list "copy10stack.lst" --xref -o "copy10stack.o" --depend "copy10stack.d" "copy10stack.asm"

@@ -1,1 +1,0 @@
---cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Nuvoton\NUC1xx --list "function2.lst" --xref -o "function2.o" --depend "function2.d" "function2.asm"

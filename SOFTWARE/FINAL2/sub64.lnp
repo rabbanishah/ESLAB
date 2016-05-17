@@ -1,3 +1,0 @@
---cpu Cortex-M0 "startup_nuc1xx.o" "core_cm0.o" "system_nuc1xx.o" "sub64.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\sub64.map" -o "sub64.axf"

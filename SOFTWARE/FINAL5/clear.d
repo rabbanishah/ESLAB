@@ -1,1 +1,0 @@
-clear.o: clear.asm
